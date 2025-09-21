@@ -1,0 +1,13 @@
+{
+    "name": "agency-vasera",
+    "scripts": {
+        "email": "cd ./vasera-api; bun run dev:email",
+        "dev:waitlist": "cd ./waitlist; bun run dev",
+        "dev:vasera-school": "cd ./vasera-school; bun run dev",
+        "dev:vasera-landingpage": "cd ./vasera-landingpage; bun run dev",
+        "dev:vasera-api": "cd ./vasera-api; bun run dev",
+        "dev:vasera-admin": "cd ./vasera-admin; bun run dev",
+        "dev:all": "concurrently --kill-others-on-fail --names waitlist,school,api,admin,landingpage --prefix-colors green,magenta,yellow,blue,pink \"bun run dev:waitlist\" \"bun run dev:vasera-school\" \"bun run dev:vasera-api\" \"bun run dev:vasera-admin\" \"bun run dev:vasera-landingpage\"",
+        "dev": "bun run dev:all"
+    }
+}
