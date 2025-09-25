@@ -41,3 +41,4 @@ bun run dev
 ```
 This will start both the Vasera School and Vasera API servers concurrently.
 The website will open automatically in your default web browser.
+
